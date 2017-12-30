@@ -64,16 +64,23 @@ exports[`Footer renders correctly 1`] = `
             </li>
             <li>
               <GatsbyLink
-                to="/privacy"
+                to="/store"
               >
-                Privacy Policy
+                Store
               </GatsbyLink>
             </li>
             <li>
               <GatsbyLink
-                to="/store"
+                to="/blog"
               >
-                Store
+                Blog
+              </GatsbyLink>
+            </li>
+            <li>
+              <GatsbyLink
+                to="/privacy"
+              >
+                Privacy Policy
               </GatsbyLink>
             </li>
           </ul>

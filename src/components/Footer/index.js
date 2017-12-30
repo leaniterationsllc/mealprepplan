@@ -102,10 +102,13 @@ const Footer = props => (
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/privacy">Privacy Policy</Link>
+                <Link to="/store">Store</Link>
               </li>
               <li>
-                <Link to="/store">Store</Link>
+                <Link to="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link to="/privacy">Privacy Policy</Link>
               </li>
             </ul>
           </Wrapper>

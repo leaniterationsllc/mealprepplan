@@ -32,13 +32,6 @@ exports[`Navigation renders 1`] = `
             Store
           </GatsbyLink>
         </li>
-        <li>
-          <GatsbyLink
-            to="/about"
-          >
-            About Us
-          </GatsbyLink>
-        </li>
       </div>
     </ul>
   </Styled(div)>
@@ -106,13 +99,6 @@ exports[`Navigation renders the mobile nav 1`] = `
             Store
           </GatsbyLink>
         </li>
-        <li>
-          <GatsbyLink
-            to="/about"
-          >
-            About Us
-          </GatsbyLink>
-        </li>
       </div>
     </ul>
   </Styled(div)>
@@ -161,20 +147,6 @@ exports[`Navigation renders the mobile nav 1`] = `
             to="/"
           >
             Home
-          </GatsbyLink>
-        </div>
-      </li>
-      <li>
-        <div
-          onClick={[Function]}
-          onKeyPress={[Function]}
-          role="button"
-          tabIndex="-1"
-        >
-          <GatsbyLink
-            to="/about"
-          >
-            About
           </GatsbyLink>
         </div>
       </li>

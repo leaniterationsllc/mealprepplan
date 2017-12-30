@@ -146,9 +146,6 @@ class Navigation extends Component {
               <li>
                 <Link to="/store">Store</Link>
               </li>
-              <li>
-                <Link to="/about">About Us</Link>
-              </li>
             </div>
           </ul>
         </Box>
@@ -178,16 +175,6 @@ class Navigation extends Component {
                   onKeyPress={this.toggleNav}
                 >
                   <Link to="/">Home</Link>
-                </div>
-              </li>
-              <li>
-                <div
-                  onClick={this.toggleNav}
-                  role="button"
-                  tabIndex="-1"
-                  onKeyPress={this.toggleNav}
-                >
-                  <Link to="/about">About</Link>
                 </div>
               </li>
               <li>
