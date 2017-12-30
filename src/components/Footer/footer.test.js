@@ -4,7 +4,9 @@ import toJson from 'enzyme-to-json';
 import Footer from './index';
 import enzymeconf from '../../utils/enzyme';
 
-it('renders correctly', () => {
-  const tree = shallow(<Footer />);
-  expect(toJson(tree)).toMatchSnapshot();
+describe('Footer', () => {
+  it('renders correctly', () => {
+    const tree = shallow(<Footer />);
+    expect(toJson(tree)).toMatchSnapshot();
+  });
 });

@@ -23,5 +23,18 @@
         "import/no-extraneous-dependencies": "off",
         "react/jsx-filename-extension": "off",
         "jsx-a11y/anchor-is-valid": "off"
+    },
+    "globals": {
+        "it": true,
+        "xit": true,
+        "expect": true,
+        "describe": true,
+        "beforeEach": true,
+        "beforeAll": true,
+        "afterAll": true,
+        "afterEach": true,
+        "jest": true,
+        "xdescribe": true,
+        "test": true
     }
 }

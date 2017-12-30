@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'My Gatsby Site'
+    title: 'Meal Prep Planner and Diary'
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorsYaml'
@@ -41,6 +41,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-offline',
     'gatsby-plugin-emotion',
-    'gatsby-plugin-react-next'
+    'gatsby-plugin-react-next',
+    'gatsby-plugin-react-helmet'
   ]
 };

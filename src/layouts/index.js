@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { injectGlobal } from 'react-emotion';
 import { fontSize } from 'styled-system';
-import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import colors from '../utils/colors';
@@ -41,6 +42,12 @@ const FontConfig = styled.div`
 
 const Layout = ({ children }) => (
   <FontConfig fontSize={[2, 3, 4]}>
+    <Helmet>
+      <script
+        defer
+        src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"
+      />
+    </Helmet>
     <Navigation />
     {children()}
     <Footer />

@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation renders 1`] = `
+<nav>
+  <Styled(div)
+    className="css-eeuixl"
+    px={
+      Array [
+        3,
+        3,
+        4,
+      ]
+    }
+    width="100%"
+  >
+    <ul>
+      <li>
+        Meal Prep Planner and Diary
+      </li>
+      <div>
+        <li>
+          <GatsbyLink
+            to="/"
+          >
+            Home
+          </GatsbyLink>
+        </li>
+        <li>
+          <GatsbyLink
+            to="/store"
+          >
+            Store
+          </GatsbyLink>
+        </li>
+        <li>
+          <GatsbyLink
+            to="/about"
+          >
+            About Us
+          </GatsbyLink>
+        </li>
+      </div>
+    </ul>
+  </Styled(div)>
+  <Styled(div)
+    className="css-3brnur"
+    px={
+      Array [
+        3,
+        3,
+        4,
+      ]
+    }
+    width="100%"
+  >
+    <ul>
+      <li>
+        Meal Prep Planner and Diary
+      </li>
+      <li>
+        <div
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <i
+            className="fas fa-bars"
+          />
+        </div>
+      </li>
+    </ul>
+  </Styled(div)>
+</nav>
+`;
+
+exports[`Navigation renders the mobile nav 1`] = `
+<nav>
+  <Styled(div)
+    className="css-eeuixl"
+    px={
+      Array [
+        3,
+        3,
+        4,
+      ]
+    }
+    width="100%"
+  >
+    <ul>
+      <li>
+        Meal Prep Planner and Diary
+      </li>
+      <div>
+        <li>
+          <GatsbyLink
+            to="/"
+          >
+            Home
+          </GatsbyLink>
+        </li>
+        <li>
+          <GatsbyLink
+            to="/store"
+          >
+            Store
+          </GatsbyLink>
+        </li>
+        <li>
+          <GatsbyLink
+            to="/about"
+          >
+            About Us
+          </GatsbyLink>
+        </li>
+      </div>
+    </ul>
+  </Styled(div)>
+  <Styled(div)
+    className="css-3brnur"
+    px={
+      Array [
+        3,
+        3,
+        4,
+      ]
+    }
+    width="100%"
+  >
+    <ul>
+      <li>
+        Meal Prep Planner and Diary
+      </li>
+      <li>
+        <div
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <i
+            className="fas fa-bars"
+          />
+        </div>
+      </li>
+    </ul>
+  </Styled(div)>
+  <MobileNav
+    mobileStyle="css-gkliy9"
+    toggleNav={[Function]}
+  >
+    <ul>
+      <li>
+        <div
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <GatsbyLink
+            to="/"
+          >
+            Home
+          </GatsbyLink>
+        </div>
+      </li>
+      <li>
+        <div
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+          tabIndex="-1"
+        >
+          <GatsbyLink
+            to="/about"
+          >
+            About
+          </GatsbyLink>
+        </div>
+      </li>
+      <li>
+        <div
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          role="button"
+          tabIndex="-1"
+        >
+          <GatsbyLink
+            to="/store"
+          >
+            Store
+          </GatsbyLink>
+        </div>
+      </li>
+    </ul>
+  </MobileNav>
+</nav>
+`;

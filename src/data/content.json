@@ -1,8 +1,11 @@
 [
     {
         "index": {
-            "title": "Hello World",
-            "subtitle": "This is a simple gatsby-starter"
+            "title": "Meal Prep Planner and Diary",
+            "subtitle": "Your meal prep companion app."
+        },
+        "store": {
+            "title": "Store"
         }
     }
 ]

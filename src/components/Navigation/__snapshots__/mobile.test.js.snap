@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation - mobile renders 1`] = `
+<div>
+  <div
+    id="content"
+  >
+    <nav
+      className=""
+    >
+      <div
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <i
+          className="fas fa-times-circle fa-lg"
+        />
+      </div>
+      <div>
+        Test
+      </div>
+    </nav>
+  </div>
+  <div
+    data-target-tag-name="DIV"
+    id="target"
+  />
+</div>
+`;

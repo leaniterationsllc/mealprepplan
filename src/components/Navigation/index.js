@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import { css } from 'emotion';
 import colors from '../../utils/colors';
@@ -11,14 +12,14 @@ const basicNav = css`
   position: fixed;
   top: 0;
   align-items: center;
-  color: ${colors.primary};
-  background-color: ${colors.secondary};
+  color: ${colors.white};
+  background-color: ${colors.primary};
   margin: 0;
   width: 100%;
   list-style-type: none;
-  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 1);
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 1px 10px 0px ${colors.black};
+  -moz-box-shadow: 0px 1px 10px 0px ${colors.black};
+  box-shadow: 0px 1px 10px 0px ${colors.black};
   z-index: 9998;
   height: 3.5rem;
 
@@ -82,8 +83,8 @@ const mobileNav = css`
 // Styles for the overlay which pops up, when the menu is clicked
 const mobileStyle = css`
   position: fixed;
-  background-color: ${colors.secondary};
-  color: ${colors.primary};
+  background-color: ${colors.primary};
+  color: ${colors.white};
   display: block;
   padding: 1rem;
   width: 100%;
@@ -132,27 +133,28 @@ class Navigation extends Component {
   }
 
   render() {
+    const { title } = this.props;
     return (
       <nav>
         <Box width="100%" px={[3, 3, 4]} className={fullNav}>
           <ul>
-            <li>Gatsbythemes.com starter</li>
+            <li>{title}</li>
             <div>
               <li>
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About Us</Link>
+                <Link to="/store">Store</Link>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                <Link to="/about">About Us</Link>
               </li>
             </div>
           </ul>
         </Box>
         <Box width="100%" px={[3, 3, 4]} className={mobileNav}>
           <ul>
-            <li>Gatsbythemes.com starter</li>
+            <li>{title}</li>
             <li>
               <div
                 onClick={this.toggleNav}
@@ -160,7 +162,7 @@ class Navigation extends Component {
                 tabIndex="0"
                 onKeyPress={this.toggleNav}
               >
-                MENU
+                <i className="fas fa-bars" />
               </div>
             </li>
           </ul>
@@ -195,7 +197,7 @@ class Navigation extends Component {
                   tabIndex="-1"
                   onKeyPress={this.toggleNav}
                 >
-                  <Link to="/blog">Blog</Link>
+                  <Link to="/store">Store</Link>
                 </div>
               </li>
             </ul>
@@ -205,5 +207,13 @@ class Navigation extends Component {
     );
   }
 }
+
+Navigation.propTypes = {
+  title: PropTypes.string
+};
+
+Navigation.defaultProps = {
+  title: 'Meal Prep Planner and Diary'
+};
 
 export default Navigation;

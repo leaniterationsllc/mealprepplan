@@ -22,7 +22,7 @@ class MobileNav extends Component {
           role="button"
           tabIndex="0"
         >
-          X
+          <i className="fas fa-times-circle fa-lg" />
         </div>
         {this.props.children}
       </nav>,

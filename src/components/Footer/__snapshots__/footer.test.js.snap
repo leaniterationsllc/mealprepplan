@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Footer renders correctly 1`] = `
 <div
-  className="css-vt9sph"
+  className="css-sqv04w"
 >
   <Styled(div)
     align="left"
