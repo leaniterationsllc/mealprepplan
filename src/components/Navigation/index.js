@@ -138,7 +138,9 @@ class Navigation extends Component {
       <nav>
         <Box width="100%" px={[3, 3, 4]} className={fullNav}>
           <ul>
-            <li>{title}</li>
+            <li>
+              <Link to="/">{title}</Link>
+            </li>
             <div>
               <li>
                 <Link to="/">Home</Link>
@@ -151,7 +153,9 @@ class Navigation extends Component {
         </Box>
         <Box width="100%" px={[3, 3, 4]} className={mobileNav}>
           <ul>
-            <li>{title}</li>
+            <li>
+              <Link to="/">{title}</Link>
+            </li>
             <li>
               <div
                 onClick={this.toggleNav}

@@ -15,7 +15,11 @@ exports[`Navigation renders 1`] = `
   >
     <ul>
       <li>
-        Meal Prep Planner and Diary
+        <GatsbyLink
+          to="/"
+        >
+          Meal Prep Planner and Diary
+        </GatsbyLink>
       </li>
       <div>
         <li>
@@ -48,7 +52,11 @@ exports[`Navigation renders 1`] = `
   >
     <ul>
       <li>
-        Meal Prep Planner and Diary
+        <GatsbyLink
+          to="/"
+        >
+          Meal Prep Planner and Diary
+        </GatsbyLink>
       </li>
       <li>
         <div
@@ -82,7 +90,11 @@ exports[`Navigation renders the mobile nav 1`] = `
   >
     <ul>
       <li>
-        Meal Prep Planner and Diary
+        <GatsbyLink
+          to="/"
+        >
+          Meal Prep Planner and Diary
+        </GatsbyLink>
       </li>
       <div>
         <li>
@@ -115,7 +127,11 @@ exports[`Navigation renders the mobile nav 1`] = `
   >
     <ul>
       <li>
-        Meal Prep Planner and Diary
+        <GatsbyLink
+          to="/"
+        >
+          Meal Prep Planner and Diary
+        </GatsbyLink>
       </li>
       <li>
         <div
