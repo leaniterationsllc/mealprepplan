@@ -26,4 +26,14 @@ describe('Navigation - mobile', () => {
     wrapper.find('div[role="button"]').simulate('click');
     expect(onToggleNav).toHaveBeenCalled();
   });
+  it('removes the portal on unmount', () => {
+    const onToggleNav = jest.fn();
+    const wrapper = shallow(
+      <Mobile mobileStyle="" toggleNav={onToggleNav}>
+        <div>Test</div>
+      </Mobile>
+    );
+
+    wrapper.unmount();
+  });
 });
