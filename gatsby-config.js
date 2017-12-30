@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://mealprepplan.com',
     title: 'Meal Prep Planner and Diary'
   },
   mapping: {
@@ -42,6 +43,7 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-next',
-    'gatsby-plugin-react-helmet'
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap'
   ]
 };
