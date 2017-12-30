@@ -9,8 +9,8 @@ import media from '../../utils/media';
 
 const footerStyle = css`
   overflow: hidden;
-  background-color: ${colors.accent};
-  color: rgba(255, 255, 255, 0.5);
+  background-color: ${colors.gray};
+  color: ${colors.accent};
   text-align: center;
 
   & img {
@@ -18,7 +18,7 @@ const footerStyle = css`
     margin: 0;
   }
   & p {
-    color: rgba(255, 255, 255, 0.5);
+    color: ${colors.accent};
   }
 `;
 
@@ -26,7 +26,6 @@ const ulStyle = css`
   list-style-type: none;
   margin: 0;
   margin-bottom: 1.45rem;
-  text-transform: uppercase;
   padding: 0;
   & a {
     cursor: pointer;
@@ -81,9 +80,13 @@ const svgStyles = css`
   }
 `;
 
+const Copy = styled.p`
+  font-size: 0.8rem;
+`;
+
 const Footer = props => (
   <div className={footerStyle}>
-    <Box p={[3, 3, 4]} align="left" color="white">
+    <Box p={[3, 3, 4]} align="left" color={colors.accent}>
       <Flex wrap={['wrap', 'wrap', 'nowrap']} justify="space-between">
         <Box width={[1, 1, 1 / 3]}>
           <Wrapper>
@@ -102,7 +105,7 @@ const Footer = props => (
                 <Link to="/privacy">Privacy Policy</Link>
               </li>
               <li>
-                <Link to="/terms">Terms of Service</Link>
+                <Link to="/store">Store</Link>
               </li>
             </ul>
           </Wrapper>
@@ -118,16 +121,6 @@ const Footer = props => (
                   rel="noopener"
                 >
                   {feather('facebook', ['30', '30'], svgStyles)}
-                </a>
-              </li>
-              <li>
-                <a
-                  title="Link to our Twitter account"
-                  href={props.twitter}
-                  target="_blank"
-                  rel="noopener"
-                >
-                  {feather('twitter', ['30', '30'], svgStyles)}
                 </a>
               </li>
               <li>
@@ -151,25 +144,25 @@ const Footer = props => (
       </Flex>
     </Box>
     <Box px={[3, 3, 1]} align="center">
-      <p>{`Copyright © 2017 ${props.name}. All rights reserved.`}</p>
+      <Copy>{`Copyright © 2017 ${props.copy}. All rights reserved.`}</Copy>
     </Box>
   </div>
 );
 
 Footer.propTypes = {
   name: PropTypes.string,
+  copy: PropTypes.string,
   facebook: PropTypes.string,
-  twitter: PropTypes.string,
   instagram: PropTypes.string,
   email: PropTypes.string
 };
 
 Footer.defaultProps = {
-  name: 'Gatbsythemes.com starter',
-  facebook: 'https://facebook.com',
-  twitter: 'https://twitter.com',
-  instagram: 'https://instagram',
-  email: ''
+  name: 'Meal Prep Planner and Diary',
+  copy: 'Lean Iterations LLC',
+  facebook: 'https://www.facebook.com/groups/550109412047209/',
+  instagram: 'https://www.instagram.com/mealprepapp/',
+  email: 'support@leaniterationsllc.com'
 };
 
 export default Footer;
