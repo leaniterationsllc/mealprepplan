@@ -9,12 +9,12 @@ export default ({ data }) => {
   const myData = data.allContentJson.edges[0].node.index;
   return (
     <div>
-      <Box bg={colors.primary}>
+      <Box bg={colors.white}>
         <Box
           width={[1, 1, 1 / 2]}
           m={['3.5rem 0 0 0', '3.5rem 0 0 0', '3.5rem auto 0 auto']}
           px={[3, 3, 0]}
-          color={colors.secondary}
+          color={colors.primary}
           align="center"
         >
           <h1>{myData.title}</h1>
@@ -31,17 +31,6 @@ export default ({ data }) => {
               </Link>
             </Box>
           </Flex>
-        </Box>
-      </Box>
-      <Box bg={colors.primary} py={[3, 3, 4]}>
-        <Box
-          width={[1, 1, 1 / 2]}
-          m="0 auto"
-          px={[3, 3, 0]}
-          color={colors.secondary}
-        >
-          <h1>This could be another section</h1>
-          <p>With another text object</p>
         </Box>
       </Box>
     </div>
