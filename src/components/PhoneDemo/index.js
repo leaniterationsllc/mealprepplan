@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { css } from 'react-emotion';
 import Img from 'gatsby-image';
 import { Box } from '../Layout';
-import phone from '../../assets/images/phone.svg';
+import phone from '../../assets/images/phoneBlack.svg';
 // import media from '../../utils/media';
 
 const phoneCover = css`

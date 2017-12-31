@@ -1,12 +1,7 @@
 /* eslint-disable no-undef, react/prop-types */
 import React from 'react';
 import styled from 'react-emotion';
-import {
-  TextContextBox,
-  Box,
-  FlexFilled,
-  FlexItem
-} from '../components/Layout';
+import { TextContextBox, Box, Flex } from '../components/Layout';
 import colors from '../utils/colors';
 import PhoneDemo from '../components/PhoneDemo';
 import StoreLinks from '../components/StoreLinks';
@@ -23,7 +18,7 @@ export default ({ data }) => {
     <div>
       <TextContextBox bg={colors.white}>
         <Box
-          width={[1, 1, 0.75]}
+          width={[1, 1, 0.5]}
           m={['3.5rem 0 0 0', '3.5rem 0 0 0', '3.5rem auto 0 auto']}
           px={[3, 3, 0]}
           color={colors.primary}
@@ -31,19 +26,20 @@ export default ({ data }) => {
         >
           <h1>{myData.title}</h1>
           <h3>{myData.subtitle}</h3>
-          <FlexFilled
+          <Flex
             wrap="wrap"
             direction="column"
-            align="center"
-            justify="center"
+            align="flex-start"
+            justify="flex-start"
           >
             <PhoneBox>
-              <PhoneDemo screens={allImageSharp.edges[0].node.resolutions} />
+              <PhoneDemo
+                screens={allImageSharp.edges[0].node.resolutions}
+                title="Plan your week"
+              />
             </PhoneBox>
-            <FlexItem flex="0 8em">
-              <StoreLinks />
-            </FlexItem>
-          </FlexFilled>
+          </Flex>
+          <StoreLinks />
         </Box>
       </TextContextBox>
     </div>
