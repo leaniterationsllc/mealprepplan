@@ -6,14 +6,11 @@ import {
   color,
   textAlign,
   justifyContent,
-  responsiveStyle
+  flexWrap,
+  alignItems,
+  flexDirection
 } from 'styled-system';
 import media from '../../utils/media';
-
-const wrap = responsiveStyle({
-  prop: 'wrap',
-  cssProperty: 'flexWrap'
-});
 
 export const Box = styled.div`
   overflow: hidden;
@@ -22,7 +19,7 @@ export const Box = styled.div`
 
 export const Flex = styled.div`
   display: flex;
-  ${justifyContent} ${wrap};
+  ${flexDirection} ${justifyContent} ${flexWrap} ${alignItems};
 `;
 
 export const TextContextBox = styled.div`
