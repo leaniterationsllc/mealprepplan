@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled, { css } from 'react-emotion';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
@@ -84,73 +84,88 @@ const Copy = styled.p`
   font-size: 0.8rem;
 `;
 
-const Footer = props => (
-  <div className={footerStyle}>
-    <Box p={[3, 3, 4]} align="left" color={colors.accent}>
-      <Flex wrap={['wrap', 'wrap', 'nowrap']} justify="space-between">
-        <Box width={[1, 1, 1 / 3]}>
-          <Wrapper>
-            <div>
-              <p>{props.name}</p>
-            </div>
-          </Wrapper>
+class Footer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      date: new Date()
+    };
+  }
+
+  render() {
+    const { date } = this.state;
+    const { name, copy, facebook, instagram, email } = this.props;
+    return (
+      <div className={footerStyle}>
+        <Box p={[3, 3, 4]} align="left" color={colors.accent}>
+          <Flex wrap={['wrap', 'wrap', 'nowrap']} justify="space-between">
+            <Box width={[1, 1, 1 / 3]}>
+              <Wrapper>
+                <div>
+                  <p>{name}</p>
+                </div>
+              </Wrapper>
+            </Box>
+            <Box width={[1, 1, 1 / 3]}>
+              <Wrapper>
+                <ul className={ulStyle}>
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/store">Store</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">Blog</Link>
+                  </li>
+                  <li>
+                    <Link to="/privacy">Privacy Policy</Link>
+                  </li>
+                </ul>
+              </Wrapper>
+            </Box>
+            <Box width={[1, 1, 1 / 3]}>
+              <Wrapper>
+                <ul className={socialList}>
+                  <li>
+                    <a
+                      title="Link to our Facebook page"
+                      href={facebook}
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      {feather('facebook', ['30', '30'], svgStyles)}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Link to out Instragram account"
+                      href={instagram}
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      {feather('instagram', ['30', '30'], svgStyles)}
+                    </a>
+                  </li>
+                  <li>
+                    <a title="Our E-Mail address" href={`mailto:${email}`}>
+                      {feather('mail', ['30', '30'], svgStyles)}
+                    </a>
+                  </li>
+                </ul>
+              </Wrapper>
+            </Box>
+          </Flex>
         </Box>
-        <Box width={[1, 1, 1 / 3]}>
-          <Wrapper>
-            <ul className={ulStyle}>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/store">Store</Link>
-              </li>
-              <li>
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link to="/privacy">Privacy Policy</Link>
-              </li>
-            </ul>
-          </Wrapper>
+        <Box px={[3, 3, 1]} align="center">
+          <Copy>
+            {`Copyright © ${date.getFullYear()} ${copy}. All rights reserved.`}
+          </Copy>
         </Box>
-        <Box width={[1, 1, 1 / 3]}>
-          <Wrapper>
-            <ul className={socialList}>
-              <li>
-                <a
-                  title="Link to our Facebook page"
-                  href={props.facebook}
-                  target="_blank"
-                  rel="noopener"
-                >
-                  {feather('facebook', ['30', '30'], svgStyles)}
-                </a>
-              </li>
-              <li>
-                <a
-                  title="Link to out Instragram account"
-                  href={props.instagram}
-                  target="_blank"
-                  rel="noopener"
-                >
-                  {feather('instagram', ['30', '30'], svgStyles)}
-                </a>
-              </li>
-              <li>
-                <a title="Our E-Mail address" href={`mailto:${props.email}`}>
-                  {feather('mail', ['30', '30'], svgStyles)}
-                </a>
-              </li>
-            </ul>
-          </Wrapper>
-        </Box>
-      </Flex>
-    </Box>
-    <Box px={[3, 3, 1]} align="center">
-      <Copy>{`Copyright © 2017 ${props.copy}. All rights reserved.`}</Copy>
-    </Box>
-  </div>
-);
+      </div>
+    );
+  }
+}
 
 Footer.propTypes = {
   name: PropTypes.string,
