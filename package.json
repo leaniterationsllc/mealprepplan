@@ -1,8 +1,7 @@
 {
-  "name": "gatsby-starter-gatsbythemes",
-  "author": "Sascha Jullmann <sascha@gatsbythemes.com>",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
+  "private": true,
   "license": "MIT",
   "dependencies": {
     "emotion": "^8.0.8",
