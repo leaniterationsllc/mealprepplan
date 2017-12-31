@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { css } from 'react-emotion';
-import { Flex, Box } from '../Layout';
+import { FlexFilled, Box } from '../Layout';
 import PlayLogo from '../../assets/images/google.svg';
 import AppleLogo from '../../assets/images/apple.svg';
 import media from '../../utils/media';
@@ -9,8 +9,9 @@ import media from '../../utils/media';
 const height = 2.75;
 
 const container = css`
-  ${media.small`
-    min-height: ${height * 3}em;
+  min-height: ${height * 2.5}em;
+  ${media.mid`
+    min-height: auto;
   `};
 `;
 
@@ -38,11 +39,10 @@ const appStore = css`
 `;
 
 const StoreLinks = ({ appStoreLink, playStoreLink }) => (
-  <Box width={0.8} className={container}>
-    <Flex
-      wrap={['wrap', 'wrap', 'nowrap']}
-      flexDirection={['row', 'column', 'column']}
-      justify="space-between"
+  <Box width={[0.8, 0.8, 1]} className={container}>
+    <FlexFilled
+      flexDirection={['column', 'column', 'row']}
+      justify={['space-around', 'space-around', 'flex-start']}
       align="center"
     >
       <Box>
@@ -67,7 +67,7 @@ const StoreLinks = ({ appStoreLink, playStoreLink }) => (
           Get it on Google Play
         </a>
       </Box>
-    </Flex>
+    </FlexFilled>
   </Box>
 );
 

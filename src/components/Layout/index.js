@@ -8,7 +8,8 @@ import {
   justifyContent,
   flexWrap,
   alignItems,
-  flexDirection
+  flexDirection,
+  flex
 } from 'styled-system';
 import media from '../../utils/media';
 
@@ -20,6 +21,16 @@ export const Box = styled.div`
 export const Flex = styled.div`
   display: flex;
   ${flexDirection} ${justifyContent} ${flexWrap} ${alignItems};
+`;
+
+export const FlexFilled = styled.div`
+  display: flex;
+  height: 100%;
+  ${flexDirection} ${justifyContent} ${flexWrap} ${alignItems};
+`;
+
+export const FlexItem = styled.div`
+  ${flex};
 `;
 
 export const TextContextBox = styled.div`
