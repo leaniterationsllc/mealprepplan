@@ -34,7 +34,7 @@ export default ({ data }) => {
           >
             <PhoneBox>
               <PhoneDemo
-                screens={allImageSharp.edges[0].node.resolutions}
+                demoResolutions={allImageSharp.edges[0].node.resolutions}
                 title="Plan your week"
               />
             </PhoneBox>

@@ -25,19 +25,20 @@ const screen = css`
   z-index: 1000;
 `;
 
-const PhoneDemo = ({ screens }) => (
+const PhoneDemo = ({ demoResolutions }) => (
   <Box className={phoneCover}>
     <Img
       title="Demo Screenshot"
       alt="Example screenshot of the meal prep planner and diary."
       outerWrapperClassName={screen}
-      resolutions={screens}
+      resolutions={demoResolutions}
     />
   </Box>
 );
 
 PhoneDemo.propTypes = {
-  screens: PropTypes.string.isRequired
+  // eslint-disable-next-line react/forbid-prop-types
+  demoResolutions: PropTypes.object.isRequired
 };
 
 PhoneDemo.defaultProps = {};
