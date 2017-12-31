@@ -1,7 +1,7 @@
 /* eslint-disable no-undef, react/prop-types */
 import React from 'react';
 import styled from 'react-emotion';
-import { TextContextBox, Box, Flex } from '../components/Layout';
+import { TextContextBox, Box, Flex, FlexItem } from '../components/Layout';
 import colors from '../utils/colors';
 import PhoneDemo from '../components/PhoneDemo';
 import StoreLinks from '../components/StoreLinks';
@@ -29,7 +29,7 @@ export default ({ data }) => {
           <Flex
             wrap="wrap"
             direction="column"
-            align="flex-start"
+            align="center"
             justify="flex-start"
           >
             <PhoneBox>
@@ -38,8 +38,10 @@ export default ({ data }) => {
                 title="Plan your week"
               />
             </PhoneBox>
+            <FlexItem flex="1">
+              <StoreLinks />
+            </FlexItem>
           </Flex>
-          <StoreLinks />
         </Box>
       </TextContextBox>
     </div>
