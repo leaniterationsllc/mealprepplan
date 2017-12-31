@@ -18,3 +18,12 @@ install:
 
 script:
 - yarn test
+- yarn build
+
+deploy:
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN
+  message: "Travis CI Deploy $TRAVIS_COMMIT (Build $TRAVIS_BUILD_NUMBER)"
+  on:
+    branch: master
