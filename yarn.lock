@@ -4155,9 +4155,9 @@ gatsby-plugin-favicon@^2.1.1:
     babel-runtime "^6.26.0"
     favicons-webpack-plugin "0.0.7"
 
-gatsby-plugin-google-analytics@^1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.10.tgz#b8532f0a9d788f4e042aa9995de6a35dbd314277"
+gatsby-plugin-google-tagmanager@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-1.0.12.tgz#d0bee32e1f37a9127a1f4b1b97734c49442a3fc4"
   dependencies:
     babel-runtime "^6.26.0"
 

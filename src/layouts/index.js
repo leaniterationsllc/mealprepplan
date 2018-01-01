@@ -43,6 +43,7 @@ const FontConfig = styled.div`
 const Layout = ({ children }) => (
   <FontConfig fontSize={[2, 3, 4]}>
     <Helmet>
+      <title>Meal Prep Planner and Diary</title>
       <script
         defer
         src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"
