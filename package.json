@@ -11,6 +11,7 @@
     "gatsby-image": "^1.0.13",
     "gatsby-link": "^1.6.21",
     "gatsby-plugin-emotion": "^1.1.8",
+    "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-google-analytics": "^1.0.10",
     "gatsby-plugin-offline": "^1.0.10",
     "gatsby-plugin-react-helmet": "^2.0.3",
@@ -49,8 +50,7 @@
       "js"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/__mocks__/fileMock.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
     },
     "collectCoverage": true,
     "coverageReporters": [

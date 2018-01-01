@@ -161,7 +161,7 @@ exports[`Footer renders correctly 1`] = `
     }
   >
     <Styled(p)>
-      Copyright © 2017 Lean Iterations LLC. All rights reserved.
+      Copyright © 2018 Lean Iterations LLC. All rights reserved.
     </Styled(p)>
   </Styled(div)>
 </div>
