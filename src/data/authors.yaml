@@ -1,3 +1,9 @@
+# Copyright (c) 2017-present, Lean Iterations LLC.
+# All rights reserved.
+
+# This source code is licensed under the MIT-style license found in the
+# LICENSE file in the root directory of this source tree.
+
 - id: Aaron Cordova
   bio: "My passions are lifting weights and general fitness. I am a passionate learner. I am eager to help people with their fitness journies."
   avatar: '../assets/images/aaron_avatar.jpeg'
