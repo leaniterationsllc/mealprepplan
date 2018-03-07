@@ -209,8 +209,8 @@ const Privacy = () => (
       <p>
         You may request that we update, correct or delete information about you
         at any time by emailing us at{' '}
-        <a href="mailto:support@leaniterations.com">
-          support@leaniterations.com
+        <a href="mailto:support@leaniterationsllc.com">
+          support@leaniterationsllc.com
         </a>, but note that we may retain certain information as required by law
         or for legitimate business purposes. We may also retain cached or
         archived copies of information about you for a certain period.
@@ -231,7 +231,7 @@ const Privacy = () => (
       <h3>Contact Us</h3>
       <p>
         If you have any questions about this Privacy Policy, please{' '}
-        <a href="mailto:support@leaniterations.com">contact us</a>.
+        <a href="mailto:support@leaniterationsllc.com">contact us</a>.
       </p>
     </Box>
   </Box>
